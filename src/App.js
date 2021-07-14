@@ -37,7 +37,10 @@ function App() {
   };
 
   return (
-    <div className='App' style={{ backgroundColor: form.rgb }}>
+    <div
+      className='App'
+      style={{ backgroundColor: form.rgb === 'Ошибка!' ? 'red' : form.rgb }}
+    >
       <Converter
         handleSubmit={handleSubmit}
         handleHexChange={handleHexChange}
